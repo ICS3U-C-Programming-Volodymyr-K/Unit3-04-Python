@@ -10,8 +10,10 @@ def main():
     # Defines constant 0
     ZERO_NUMBER = 0
     # Compares our constant with user number to present message based on it
-    if user_number >= ZERO_NUMBER:
-        print("Your number, {:.2f}".format(user_number))
+    if user_number == ZERO_NUMBER:
+        print("Your number, {} is equal to zero".format(user_number))
+    elif user_number >= ZERO_NUMBER:
+        print("Your number, {:.2f} is positive".format(user_number))
         # Represents the negative number answer where it will show that it is negative.
     elif user_number <= ZERO_NUMBER:
         print("Your number, {:.2f} is negative".format(user_number))
